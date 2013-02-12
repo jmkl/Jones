@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dcsms_togel_teks">#ff000000</color>
+    <color name="dcsms_togel_teks_shadow">#00ffffff</color>
+    <color name="dcsms_tab_teks">#ff000000</color>
+    <color name="dcsms_tab_teks_shadow">#ffffffff</color>
+    <color name="dcsms_dateview_color">#ff000000</color>
+</resources>
