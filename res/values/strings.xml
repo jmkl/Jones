@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="nama_tema">Jones</string>
     <string name="author">Raika 20</string>
     <string name="version">beta 1</string>
@@ -9,4 +10,5 @@ and nothin u can do to make it not awesome
 because awesome is my middle name
 
 drugs,sex n dubstep"</string>
+
 </resources>
