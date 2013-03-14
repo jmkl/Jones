@@ -1,6 +1,8 @@
 Jones OMG!!! dcsms Theme Template
 ===================================
+
 ![Example Image][1]
+
 This Project is a sample theme for OMG!!! dcsms 
 Sample Theme by Raika 20 http://raika20.deviantart.com/
 
