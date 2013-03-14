@@ -15,15 +15,37 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int dcsms_dateview_color=0x7f050004;
-        public static final int dcsms_notif_konten_date=0x7f050008;
-        public static final int dcsms_notif_konten_desc=0x7f050007;
-        public static final int dcsms_notif_konten_title=0x7f050006;
-        public static final int dcsms_notif_title_color=0x7f050005;
-        public static final int dcsms_tab_teks=0x7f050002;
-        public static final int dcsms_tab_teks_shadow=0x7f050003;
-        public static final int dcsms_togel_teks=0x7f050000;
-        public static final int dcsms_togel_teks_shadow=0x7f050001;
+        /**  battery text, clock, trafficstate default color 
+         */
+        public static final int batt_color=0x7f060009;
+        public static final int clock_color=0x7f06000a;
+        /**      text color for dateview 
+         */
+        public static final int dcsms_dateview_color=0x7f060004;
+        public static final int dcsms_notif_konten_date=0x7f060008;
+        public static final int dcsms_notif_konten_desc=0x7f060007;
+        /**      text color for notification content 
+         */
+        public static final int dcsms_notif_konten_title=0x7f060006;
+        /**      text color for ongoing/nonotification/latest event 
+         */
+        public static final int dcsms_notif_title_color=0x7f060005;
+        /**      color for tab text 
+         */
+        public static final int dcsms_tab_teks=0x7f060002;
+        public static final int dcsms_tab_teks_shadow=0x7f060003;
+        /**  color for toggles text 
+         */
+        public static final int dcsms_togel_teks=0x7f060000;
+        public static final int dcsms_togel_teks_shadow=0x7f060001;
+        public static final int trafficstate_color=0x7f06000b;
+    }
+    public static final class dimen {
+        public static final int clock_size=0x7f070001;
+        /**      text size for each item 
+         */
+        public static final int textbattery_size=0x7f070000;
+        public static final int traffic_state_size=0x7f070002;
     }
     public static final class drawable {
         public static final int apps_bg=0x7f020000;
@@ -31,67 +53,104 @@ public final class R {
         public static final int apps_mask=0x7f020002;
         public static final int bluetooth_off=0x7f020003;
         public static final int bluetooth_on=0x7f020004;
-        public static final int clear_button=0x7f020005;
-        public static final int clear_normal=0x7f020006;
-        public static final int clear_press=0x7f020007;
-        public static final int com_android_vending=0x7f020008;
-        public static final int dateview_bg=0x7f020009;
-        public static final int dcsms_apps_none=0x7f02000a;
-        public static final int drag_handler=0x7f02000b;
-        public static final int flight_mode_off=0x7f02000c;
-        public static final int flight_mode_on=0x7f02000d;
-        public static final int gps_off=0x7f02000e;
-        public static final int gps_on=0x7f02000f;
-        public static final int ic_launcher=0x7f020010;
-        public static final int icon_shadow=0x7f020011;
-        public static final int latest_item_bg=0x7f020012;
-        public static final int mobile_data_off=0x7f020013;
-        public static final int mobile_data_on=0x7f020014;
-        public static final int musik_next=0x7f020015;
-        public static final int musik_pause=0x7f020016;
-        public static final int musik_play=0x7f020017;
-        public static final int musik_prev=0x7f020018;
-        public static final int mute=0x7f020019;
-        public static final int notif_ikon_bg=0x7f02001a;
-        public static final int notif_konten_bg=0x7f02001b;
-        public static final int notification_content_bg_normal=0x7f02001c;
-        public static final int notification_content_bg_press=0x7f02001d;
-        public static final int preview=0x7f02001e;
-        public static final int rotate_off=0x7f02001f;
-        public static final int rotate_on=0x7f020020;
-        public static final int screenshot=0x7f020021;
-        public static final int screentimeout_off=0x7f020022;
-        public static final int screentimeout_on=0x7f020023;
-        public static final int seekbar_bagian_atas=0x7f020024;
-        public static final int seekbar_bagian_bawah=0x7f020025;
-        public static final int seekbar_thumbnail=0x7f020026;
-        public static final int senter=0x7f020027;
-        public static final int shutdown_bg=0x7f020028;
-        public static final int shutdown_tombol_off=0x7f020029;
-        public static final int shutdown_tombol_reboot=0x7f02002a;
-        public static final int shutdown_tombol_recovery=0x7f02002b;
-        public static final int sound_vibrate=0x7f02002c;
-        public static final int tab_aktif=0x7f02002d;
-        public static final int tab_nonaktif=0x7f02002e;
-        public static final int togel_state=0x7f02002f;
-        public static final int togel_status_normal=0x7f020030;
-        public static final int togel_status_pressed=0x7f020031;
-        public static final int tracking_view_bg=0x7f020032;
-        public static final int usb_tethering_off=0x7f020033;
-        public static final int usb_tethering_on=0x7f020034;
-        public static final int vibrate=0x7f020035;
-        public static final int wifi_hotspot_off=0x7f020036;
-        public static final int wifi_hotspot_on=0x7f020037;
-        public static final int wifi_off=0x7f020038;
-        public static final int wifi_on=0x7f020039;
+        public static final int brightness_max=0x7f020005;
+        public static final int brightness_min=0x7f020006;
+        public static final int carrier_logo=0x7f020007;
+        public static final int clear_button=0x7f020008;
+        public static final int clear_normal=0x7f020009;
+        public static final int clear_press=0x7f02000a;
+        public static final int com_android_vending=0x7f02000b;
+        public static final int dateview_bg=0x7f02000c;
+        public static final int dcsms_apps_none=0x7f02000d;
+        public static final int drag_handler=0x7f02000e;
+        public static final int flight_mode_off=0x7f02000f;
+        public static final int flight_mode_on=0x7f020010;
+        public static final int gps_off=0x7f020011;
+        public static final int gps_on=0x7f020012;
+        public static final int ic_launcher=0x7f020013;
+        public static final int icon_shadow=0x7f020014;
+        public static final int latest_item_bg=0x7f020015;
+        public static final int mobile_data_off=0x7f020016;
+        public static final int mobile_data_on=0x7f020017;
+        public static final int musik_next=0x7f020018;
+        public static final int musik_pause=0x7f020019;
+        public static final int musik_play=0x7f02001a;
+        public static final int musik_prev=0x7f02001b;
+        public static final int mute=0x7f02001c;
+        public static final int notif_ikon_bg=0x7f02001d;
+        public static final int notif_konten_bg=0x7f02001e;
+        public static final int notification_content_bg_normal=0x7f02001f;
+        public static final int notification_content_bg_press=0x7f020020;
+        public static final int preview=0x7f020021;
+        public static final int rotate_off=0x7f020022;
+        public static final int rotate_on=0x7f020023;
+        public static final int screenshot=0x7f020024;
+        public static final int screentimeout_off=0x7f020025;
+        public static final int screentimeout_on=0x7f020026;
+        public static final int seekbar_bagian_atas=0x7f020027;
+        public static final int seekbar_bagian_bawah=0x7f020028;
+        public static final int seekbar_thumbnail=0x7f020029;
+        public static final int senter=0x7f02002a;
+        public static final int shutdown_bg=0x7f02002b;
+        public static final int shutdown_tombol_off=0x7f02002c;
+        public static final int shutdown_tombol_reboot=0x7f02002d;
+        public static final int shutdown_tombol_recovery=0x7f02002e;
+        public static final int sound_vibrate=0x7f02002f;
+        public static final int stat_sys_data_connected_3g=0x7f020030;
+        public static final int stat_sys_data_connected_e=0x7f020031;
+        public static final int stat_sys_data_connected_g=0x7f020032;
+        public static final int stat_sys_data_connected_h=0x7f020033;
+        public static final int stat_sys_data_in_3g=0x7f020034;
+        public static final int stat_sys_data_in_e=0x7f020035;
+        public static final int stat_sys_data_in_g=0x7f020036;
+        public static final int stat_sys_data_in_h=0x7f020037;
+        public static final int stat_sys_data_inandout_3g=0x7f020038;
+        public static final int stat_sys_data_inandout_e=0x7f020039;
+        public static final int stat_sys_data_inandout_g=0x7f02003a;
+        public static final int stat_sys_data_inandout_h=0x7f02003b;
+        public static final int stat_sys_data_out_3g=0x7f02003c;
+        public static final int stat_sys_data_out_e=0x7f02003d;
+        public static final int stat_sys_data_out_g=0x7f02003e;
+        public static final int stat_sys_data_out_h=0x7f02003f;
+        public static final int stat_sys_signal_0=0x7f020040;
+        public static final int stat_sys_signal_1=0x7f020041;
+        public static final int stat_sys_signal_2=0x7f020042;
+        public static final int stat_sys_signal_3=0x7f020043;
+        public static final int stat_sys_signal_4=0x7f020044;
+        public static final int stat_sys_signal_flightmode=0x7f020045;
+        public static final int stat_sys_signal_null=0x7f020046;
+        public static final int stat_sys_wifi_signal_0=0x7f020047;
+        public static final int stat_sys_wifi_signal_1=0x7f020048;
+        public static final int stat_sys_wifi_signal_2=0x7f020049;
+        public static final int stat_sys_wifi_signal_3=0x7f02004a;
+        public static final int stat_sys_wifi_signal_4=0x7f02004b;
+        public static final int statusbar_background=0x7f02004c;
+        public static final int tab_aktif=0x7f02004d;
+        public static final int tab_nonaktif=0x7f02004e;
+        public static final int togel_state=0x7f02004f;
+        public static final int togel_status_normal=0x7f020050;
+        public static final int togel_status_pressed=0x7f020051;
+        public static final int tracking_view_bg=0x7f020052;
+        public static final int usb_tethering_off=0x7f020053;
+        public static final int usb_tethering_on=0x7f020054;
+        public static final int vibrate=0x7f020055;
+        public static final int wifi_hotspot_off=0x7f020056;
+        public static final int wifi_hotspot_on=0x7f020057;
+        public static final int wifi_off=0x7f020058;
+        public static final int wifi_on=0x7f020059;
     }
     public static final class layout {
         public static final int uh_raa=0x7f030000;
     }
     public static final class string {
-        public static final int author=0x7f060001;
-        public static final int description=0x7f060003;
-        public static final int nama_tema=0x7f060000;
-        public static final int version=0x7f060002;
+        public static final int author=0x7f050001;
+        public static final int clock_font=0x7f050005;
+        public static final int description=0x7f050003;
+        public static final int nama_tema=0x7f050000;
+        /**      font for text item.. the font file must be store in assets folder 
+         */
+        public static final int textbattery_font=0x7f050004;
+        public static final int traffic_state_font=0x7f050006;
+        public static final int version=0x7f050002;
     }
 }

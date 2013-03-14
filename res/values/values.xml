@@ -16,5 +16,22 @@
     <color name="dcsms_notif_konten_title">#444</color>
     <color name="dcsms_notif_konten_desc">#666</color>
     <color name="dcsms_notif_konten_date">#777</color>
+    
+    
+<!-- battery text, clock, trafficstate default color -->
+    <color name="batt_color">#fff</color> 
+    <color name="clock_color">#fff</color>
+    <color name="trafficstate_color">#fff</color>
+    
+    
+<!--     text size for each item -->
+     <dimen name="textbattery_size">22dip</dimen>
+    <dimen name="clock_size">22dip</dimen>
+    <dimen name="traffic_state_size">22dip</dimen>
+
+<!--     font for text item.. the font file must be store in assets folder -->
+    <string name="textbattery_font">courier.ttf</string>
+    <string name="clock_font">Regular.ttf</string>
+    <string name="traffic_state_font">Regular.ttf</string>
 
 </resources>
