@@ -1,5 +1,6 @@
-Jones
-=====
+Jones OMG!!! dcsms Theme Template
+===================================
+[Preview][1]
 This Project is a sample theme for OMG!!! dcsms 
 Sample Theme by Raika 20 http://raika20.deviantart.com/
 
@@ -14,3 +15,5 @@ i.e playstore icon
 	
 
 visit us : http://androidminang.com
+
+[1]: http://i.imgur.com/D4a6Pam.png
