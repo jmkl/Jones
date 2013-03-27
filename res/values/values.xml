@@ -33,5 +33,33 @@
     <string name="textbattery_font">courier.ttf</string>
     <string name="clock_font">Regular.ttf</string>
     <string name="traffic_state_font">Regular.ttf</string>
+    
+<!--     to allow change only in statusbar area -->
+    
+     <item type="bool" name="include_statusbar" >true</item>
+     
+     
+<!--     date in notification -->
+     <dimen name="notifclock_fontsize">40dip</dimen>
+       <dimen name="notifdate_fontsize">18dip</dimen>
+     <string name="notifclock_font">Regular.ttf</string>
+      <string name="notifdate_font">Regular.ttf</string>
+    
+<!--        weather font type -->
+	<string name="city_font">Republic.ttf</string>
+	<string name="humidity_font">Republic.ttf</string>
+	<string name="degree_font">Republic.ttf</string>
+	<string name="condition_font">Republic.ttf</string>
+	
+    <color name="recent_app_tv_color">#00ffffff</color>
+    
+<!--     for weather background add more if u like...its refer to images in drawable folder -->
+        <string-array name="weather_background_arai">
+        <item >weather_backgroud_1</item>
+        <item >weather_backgroud_2</item>
+        <item >weather_backgroud_3</item>
+        <item >weather_backgroud_4</item>
+    </string-array>
+    
 
 </resources>
