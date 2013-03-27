@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 <!-- color for toggles text -->
-    <color name="dcsms_togel_teks">#ff000000</color>
-    <color name="dcsms_togel_teks_shadow">#00ffffff</color>
+    <color name="dcsms_togel_teks">#fff</color>
+    <color name="dcsms_togel_teks_shadow">#000</color>
 <!--     color for tab text -->
-    <color name="dcsms_tab_teks">#ff000000</color>
-    <color name="dcsms_tab_teks_shadow">#ffffffff</color>
+    <color name="dcsms_tab_teks">#fff</color>
+    <color name="dcsms_tab_teks_shadow">#000</color>
     
 <!--     text color for dateview -->
-    <color name="dcsms_dateview_color">#ff000000</color>    
+    <color name="dcsms_dateview_color">#fff</color>    
 <!--     text color for ongoing/nonotification/latest event -->
-    <color name="dcsms_notif_title_color">#444</color>
+    <color name="dcsms_notif_title_color">#fff</color>
     
 <!--     text color for notification content -->
-    <color name="dcsms_notif_konten_title">#444</color>
-    <color name="dcsms_notif_konten_desc">#666</color>
-    <color name="dcsms_notif_konten_date">#777</color>
+    <color name="dcsms_notif_konten_title">#fff</color>
+    <color name="dcsms_notif_konten_desc">#fff</color>
+    <color name="dcsms_notif_konten_date">#fff</color>
     
     
 <!-- battery text, clock, trafficstate default color -->
@@ -27,10 +27,10 @@
 <!--     text size for each item -->
      <dimen name="textbattery_size">22dip</dimen>
     <dimen name="clock_size">22dip</dimen>
-    <dimen name="traffic_state_size">22dip</dimen>
+    <dimen name="traffic_state_size">16dip</dimen>
 
 <!--     font for text item.. the font file must be store in assets folder -->
-    <string name="textbattery_font">courier.ttf</string>
+    <string name="textbattery_font">Regular.ttf</string>
     <string name="clock_font">Regular.ttf</string>
     <string name="traffic_state_font">Regular.ttf</string>
     
@@ -46,10 +46,10 @@
       <string name="notifdate_font">Regular.ttf</string>
     
 <!--        weather font type -->
-	<string name="city_font">Republic.ttf</string>
-	<string name="humidity_font">Republic.ttf</string>
-	<string name="degree_font">Republic.ttf</string>
-	<string name="condition_font">Republic.ttf</string>
+	<string name="city_font">Regular.ttf</string>
+	<string name="humidity_font">Regular.ttf</string>
+	<string name="degree_font">Regular.ttf</string>
+	<string name="condition_font">Regular.ttf</string>
 	
     <color name="recent_app_tv_color">#00ffffff</color>
     
